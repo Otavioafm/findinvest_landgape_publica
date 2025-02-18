@@ -160,6 +160,23 @@
     color: var(--primary-purple);
     font-size: 3rem;
     margin-bottom: 0rem;
+    word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
+}
+
+.page-header p {
+    word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem; /* Ajustar o tamanho da fonte em telas menores */
+        padding: 0 1rem; /* Adicionar padding para evitar vazamento de texto */
+    }
+
+    .page-header p {
+        font-size: 1rem; /* Ajustar o tamanho da fonte em telas menores */
+        padding: 0 1rem; /* Adicionar padding para evitar vazamento de texto */
+    }
 }
 
 /* Business Model Section */
@@ -177,6 +194,7 @@
     color: var (--gray-800);
     margin-bottom: 3rem;
     text-align: center;
+    word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
 }
 
 .value-props {
@@ -184,6 +202,20 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .value-props {
+        grid-template-columns: 1fr; /* Alterar para uma coluna em telas menores */
+        gap: 2rem; /* Ajustar o espaçamento entre os itens */
+    }
+}
+
+@media (max-width: 768px) {
+    .lead-text {
+        font-size: 1rem; /* Ajustar o tamanho da fonte em telas menores */
+        padding: 0 1rem; /* Adicionar padding para evitar vazamento de texto */
+    }
 }
 
 .value-item {

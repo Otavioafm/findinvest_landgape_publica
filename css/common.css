@@ -575,7 +575,7 @@ body {
     height: 3px;
     margin: 5px auto;
     transition: var(--transition);
-    background-color: var(--primary-dark);
+    background-color: #f8f9fa;
 }
 
 .nav-menu {
@@ -806,7 +806,7 @@ body {
         top: 0;
         gap: 0;
         flex-direction: column;
-        background-color: var(--white);
+        background-color: #051b34;
         width: 100%;
         max-width: 300px;
         height: 100vh;
