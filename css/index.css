@@ -534,7 +534,7 @@
 .no-effect:hover i {
     transform: none !important;
     background: none !important;
-    color: var(--accent-green) !important;
+    color: #051b34 !important;
 }
 
 /* Remover background apenas dos ícones específicos */
