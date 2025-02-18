@@ -1,0 +1,72 @@
+/* Popup de Login/Cadastro */
+.auth-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Adicionar desfoque ao plano de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.auth-popup-content {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.auth-popup-content i {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.auth-popup-content h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.auth-popup-content p {
+    margin-bottom: 2rem;
+    color: var(--gray-800);
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.auth-buttons .primary-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: var(--accent-green);
+    color: var(--white);
+}
+
+.auth-buttons .primary-button:hover {
+    background-color: var(--accent-green-dark);
+}
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2.5rem; /* Aumentar o tamanho do X */
+    cursor: pointer;
+    color: var(--white);
+}

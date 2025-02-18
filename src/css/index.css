@@ -1,0 +1,492 @@
+/* Hero Section */
+:root {
+    --primary-dark: #23244c;
+    --primary-purple: #403f6f;
+    --light-purple: #f1edff;
+    --bright-purple: #8485f0;
+    --accent-green: #38A169;
+    --accent-green-dark: #2F855A;
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-800: #343a40;
+    --transition: all 0.3s ease;
+}
+
+
+
+.hero {
+    padding: 8rem 1rem 4rem;
+    background-color: var(--primary-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero .subtitle {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    color: var(--white);
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 1rem;
+    background-color: var(--white);
+}
+
+.features h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 3rem;
+    color: var(--primary-dark);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 0;
+    margin-top: -4rem;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.cta-section h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.cta-section p {
+    margin-bottom: 3rem;
+    color: var(--gray-800);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+/* Buttons */
+.primary-button.startup-button {
+    background-color: var(--accent-green);
+}
+
+.primary-button.startup-button:hover {
+    background-color: var(--accent-green-dark);
+}
+
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 0;
+    margin-top: -4rem;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.cta-section h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+}
+
+.cta-section p {
+    margin-bottom: 3rem;
+    color: var(--gray-800);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.cta-group {
+    display: flex;
+    flex-direction: column; /* Altere para coluna */
+    gap: 1rem; /* Espaçamento entre os botões */
+    justify-content: center;
+    align-items: center; /* Centralize os botões */
+    margin-bottom: 4rem;
+}
+
+/* Botões */
+.cta-button,
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cta-button,
+.primary-button {
+    background-color: var(--accent-green);
+    color: var (--white);
+}
+
+.cta-button:hover,
+.primary-button:hover {
+    background-color: var(--accent-green-dark);
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: #23244c;
+    color: #e9ecef;
+    border: 2px solid var(--primary-dark);
+}
+
+.secondary-button:hover {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 1rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 12rem 2rem 6rem;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-purple));
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+.hero .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+/* Features Section */
+.features {
+    padding: 6rem 0;
+    background-color: var(--white);
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--accent-green);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* Animação de Hover para os Cards na Seção de Features */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animação de Hover para os Botões */
+.primary-button,
+.secondary-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Animações de Card e Hover */
+
+/* Animação de Hover para os Cards na Seção de Features */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animação de Hover para os Botões */
+.primary-button,
+.secondary-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    transform: translateY(-2px);
+}
+
+
+
+
+
+/* Features Section */
+.features {
+    padding: 6rem 0;
+    background-color: var(--white);
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--accent-green);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* Animação de Hover para os Ícones nos Cards */
+.feature-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-green);
+    background: var(--light-purple);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover i {
+    transform: scale(1.1);
+    background-color: var(--accent-green);
+    color: var(--white);
+}
+
+/* Animação de Hover para os Cards na Seção de Benefícios */
+.benefit-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animação de Hover para os Ícones nos Cards de Benefícios */
+.benefit-card i {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.benefit-card:hover i {
+    transform: scale(1.1);
+    background-color: var(--accent-green);
+    color: var(--white);
+}
+
+/* Animação de Hover para os Cards na Seção de Missão */
+.mission-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animação de Hover para os Ícones nos Cards de Missão */
+.mission-card i {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.mission-card:hover i {
+    transform: scale(1.1);
+    background-color: var(--accent-green);
+    color: var(--white);
+}
+
+.primary-button,
+.secondary-button {
+    width: 12rem; /* Defina a largura para 100% */
+    max-width: 30rem; /* Defina um tamanho máximo */
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 0 2rem; /* Aumente o padding para telas menores */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Ajuste o tamanho da fonte */
+        word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
+    }
+
+    .hero .subtitle {
+        font-size: 1rem; /* Ajuste o tamanho da fonte */
+        word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
+    }
+
+    .cta-group {
+        flex-direction: column; /* Altere para coluna */
+        gap: 1rem; /* Espaçamento entre os botões */
+        justify-content: center;
+        align-items: center; /* Centralize os botões */
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%; /* Defina a largura para 100% */
+        max-width: 300px; /* Defina um tamanho máximo */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 0 1rem; /* Ajuste o padding para telas menores */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Ajuste o tamanho da fonte */
+        word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
+    }
+
+    .hero .subtitle {
+        font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+        word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
+    }
+
+    .cta-group {
+        flex-direction: column; /* Altere para coluna */
+        gap: 1rem; /* Espaçamento entre os botões */
+        justify-content: center;
+        align-items: center; /* Centralize os botões */
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%; /* Defina a largura para 100% */
+        max-width: 250px; /* Defina um tamanho máximo */
+    }
+}
+
+
