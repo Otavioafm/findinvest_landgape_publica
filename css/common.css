@@ -37,8 +37,8 @@ body {
 .header {
     position: fixed;
     width: 100%;
-    background: var(--white);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #04101e;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
     z-index: 1000;
     top: 0;
 }
@@ -63,7 +63,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-dark);
+    color: var(--white);
 }
 
 .nav-links {
@@ -123,6 +123,10 @@ body {
     background-color: var(--accent-green);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
     transition: var(--transition);
+}
+
+.nav-links .nav-link-special::marker {
+    content: none; /* Remover o pseudo-elemento ::marker */
 }
 
 /* Responsividade */
@@ -265,6 +269,7 @@ body {
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         padding: 80px 0;
         overflow-y: auto;
+        list-style: none; /* Remover o estilo de lista */
     }
 
     .nav-menu.active {
@@ -274,6 +279,7 @@ body {
     .nav-menu li {
         margin: 20px 0;
         padding: 0 1rem;
+        list-style: none; /* Remover o estilo de lista */
     }
 
     .nav-menu .nav-link {
@@ -308,6 +314,10 @@ body {
     .nav-menu .nav-link:hover::after,
     .nav-menu .nav-link.active::after {
         width: 50%;
+    }
+
+    .nav-menu .nav-link::marker {
+        content: none; /* Remover o pseudo-elemento ::marker */
     }
 
     .footer-content {
@@ -380,7 +390,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: var(--primary-dark);
+    background-color: #04101e;
     color: var(--white);
     padding: 4rem 0 2rem;
 }
@@ -572,6 +582,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
+    list-style: none; /* Remover o estilo de lista */
 }
 
 .nav-link-special {
@@ -615,7 +626,7 @@ body {
 }
 
 .nav-menu .nav-link {
-    color: var(--primary-dark);
+    color: var(--white);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
@@ -624,7 +635,7 @@ body {
 
 .nav-menu .nav-link:hover,
 .nav-menu .nav-link.active {
-    color: var(--accent-green);
+    color: var(--white);
 }
 
 .nav-menu .nav-link::after {
@@ -716,6 +727,7 @@ body {
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         padding: 80px 0;
         overflow-y: auto;
+        list-style: none; /* Remover o estilo de lista */
     }
 
     .nav-menu.active {
@@ -725,6 +737,7 @@ body {
     .nav-menu li {
         margin: 20px 0;
         padding: 0 1rem;
+        list-style: none; /* Remover o estilo de lista */
     }
 
     .nav-menu .nav-link {
@@ -802,6 +815,7 @@ body {
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         padding: 80px 0;
         overflow-y: auto;
+        list-style: none; /* Remover o estilo de lista */
     }
 
     .nav-menu.active {
@@ -811,6 +825,7 @@ body {
     .nav-menu li {
         margin: 20px 0;
         padding: 0 1rem;
+        list-style: none; /* Remover o estilo de lista */
     }
 
     .nav-menu .nav-link {
@@ -845,6 +860,10 @@ body {
     .nav-menu .nav-link:hover::after,
     .nav-menu .nav-link.active::after {
         width: 50%;
+    }
+
+    .nav-menu .nav-link::marker {
+        content: none; /* Remover o pseudo-elemento ::marker */
     }
 
     .footer-content {

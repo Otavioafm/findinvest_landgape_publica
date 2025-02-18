@@ -14,27 +14,94 @@
     --transition: all 0.3s ease;
 }
 
-
-
 .hero {
-    padding: 8rem 1rem 4rem;
+    padding: 6rem 1rem 0; /* Remover o padding inferior para colar a onda na borda */
     background-color: var(--primary-dark);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative; /* Adicionar posição relativa */
 }
 
 .hero-content {
-    text-align: center;
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
     word-wrap: break-word; /* Adicionando quebra de linha para evitar vazamento de texto */
 }
 
+.hero-text {
+    text-align: left; /* Mover o texto para a esquerda */
+}
+
+.hero-image {
+    max-width: 40%; /* Diminuir o tamanho da foto */
+    margin-top: -2rem; /* Mover a foto um pouco para cima */
+    position: relative; /* Adicionar posição relativa */
+    z-index: 2; /* Garantir que a imagem do celular fique sobre a onda */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border: none; /* Garantir que não haja bordas */
+    outline: none; /* Garantir que não haja outline */
+    transition: transform 0.3s ease; /* Adicionar transição para o efeito de hover */
+}
+
+.hero-image img:hover {
+    transform: scale(1.05); /* Aumentar ligeiramente o tamanho da imagem */
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0; /* Fixar a posição da onda na parte inferior */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1; /* Garantir que a onda fique atrás da imagem do celular */
+}
+
+.hero-sombra {
+    position: absolute;
+    bottom: -10px; /* Aproximar a sombra da foto do celular */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; /* Ajustar a largura da sombra */
+    z-index: 0; /* Garantir que a sombra fique atrás da imagem do celular */
+}
+
+/* Regras de mídia para garantir que a imagem do celular não desapareça em telas menores */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Alterar para coluna em telas menores */
+        align-items: center;
+    }
+
+    .hero-image {
+        max-width: 80%; /* Ajustar o tamanho da imagem em telas menores */
+        margin-top: 1rem; /* Ajustar o margin-top em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image {
+        max-width: 100%; /* Ajustar o tamanho da imagem em telas muito pequenas */
+        margin-top: 1rem; /* Ajustar o margin-top em telas muito pequenas */
+    }
+}
+
+.hero h1, .hero .subtitle {
+    text-align: left; /* Mover o título e o texto para a esquerda */
+}
+
 .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Diminuir a fonte do título h1 */
     color: var(--white);
     margin-bottom: 1.5rem;
     line-height: 1.2;
@@ -80,8 +147,6 @@
     margin-top: -50px;
     margin-bottom: 3px; /* Adiciona espaço entre o texto e os cards */
 }
-
-
 
 /* Page Header */
 .page-header {
@@ -129,7 +194,7 @@
 
 .value-item i {
     font-size: 2.5rem;
-    color: var(--accent-green);
+    color: #23244c;
 }
 
 .value-text h3 {
@@ -192,7 +257,6 @@
     color: var(--gray-800);
 }
 
-
 /* Cards na Home e Oportunidades */
 .proposta-card i,
 .benefit-card i,
@@ -223,10 +287,6 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
-
-
-
-
 
 /* CTA Section */
 .cta-section {
@@ -261,7 +321,6 @@
 .primary-button.startup-button:hover {
     background-color: var(--accent-green-dark);
 }
-
 
 /* CTA Section */
 .cta-section {
@@ -314,7 +373,7 @@
 
 .cta-button,
 .primary-button {
-    background-color: var(--accent-green);
+    background-color: #23244c;
     color: var (--white);
 }
 
@@ -335,11 +394,6 @@
     color: var(--accent-green);
     transform: translateY(-2px);
 }
-
-
-
-
-
 
 /* Community Section */
 .community-content {
@@ -390,7 +444,7 @@
 .feature-item i {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--accent-green);
+    color: #23244c;
     background: var(--light-purple);
     width: 80px;
     height: 80px;
@@ -460,13 +514,6 @@
     font-size: 3rem !important;
 }
 
-
-
-
-
-
-
-
 /* How It Works Section */
 .how-it-works {
     padding: 4rem 1rem;
@@ -522,15 +569,13 @@
     color: var(--gray-800);
 }
 
-
-
 /* Cards na Home e Oportunidades */
 .proposta-card i,
 .benefit-card i,
 .feature-card i {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--accent-green);
+    color: #23244c;;
     background: var(--light-purple);
     width: 80px;
     height: 80px;
@@ -544,7 +589,7 @@
 .benefit-card:hover i,
 .feature-card:hover i {
     transform: scale(1.1);
-    background: var(--accent-green);
+    background: var(--primary-purple);
     color: white;
 }
 
@@ -554,11 +599,6 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
-
-
-
-
-
 
 /* CTA Section */
 .cta-section {
@@ -572,11 +612,10 @@
     margin-bottom: 1rem;
 }
 
-
 /* Hero Section */
 .hero {
     padding: 12rem 2rem 6rem;
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-purple));
+    background: var(--primary-purple);
     color: var(--white);
     text-align: center;
 }
@@ -587,7 +626,7 @@
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Diminuir a fonte do título h1 */
     margin-bottom: 1.5rem;
     line-height: 1.2;
     color: var(--white);
@@ -636,10 +675,6 @@
     margin-bottom: 1.5rem;
 }
 
-
-
-
-
 /* Animação de Hover para os Cards na Seção de Features */
 .feature-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -684,10 +719,6 @@
     transform: translateY(-2px);
 }
 
-
-
-
-
 /* Features Section */
 .features {
     padding: 6rem 0;
@@ -709,7 +740,7 @@
 .feature-card {
     text-align: center;
     padding: 3rem 2rem;
-    background: var(--white);
+    background: var (--white);
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
@@ -730,13 +761,11 @@
     font-size: 1.5rem;
 }
 
-
-
 /* Animação de Hover para os Ícones nos Cards */
 .feature-card i {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--accent-green);
+    color: var(--primary-purple);
     background: var(--light-purple);
     width: 80px;
     height: 80px;
@@ -748,7 +777,7 @@
 
 .feature-card:hover i {
     transform: scale(1.1);
-    background-color: var(--accent-green);
+    background-color: var(--primary-purple);
     color: var(--white);
 }
 
@@ -769,7 +798,7 @@
 
 .benefit-card:hover i {
     transform: scale(1.1);
-    background-color: var(--accent-green);
+    background-color: #23244c;
     color: var(--white);
 }
 
@@ -791,7 +820,7 @@
 .mission-card:hover i {
     transform: scale(1.1);
     background-color: var(--accent-green);
-    color: var(--white);
+    color: var (--white);
 }
 
 .primary-button,
@@ -864,6 +893,10 @@
 
 .footer {
     padding: 4rem 0; /* Ajustar o padding para mover o footer um pouco mais para baixo */
+}
+
+h2 {
+    font-size: 1.5rem; /* Diminuir a fonte do título h2 */
 }
 
 
