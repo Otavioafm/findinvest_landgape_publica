@@ -50,7 +50,7 @@
 
 .privacy-block ul li i {
     font-size: 1.5rem;
-    color: var(--accent-green);
+    color: #23244c;
     margin-right: 1rem;
     margin-top: 0.2rem;
 }
@@ -81,7 +81,7 @@
 .usage-item i,
 .security-item i {
     font-size: 2rem;
-    color: var(--accent-green);
+    color: #23244c;
     margin-bottom: 1rem;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .contact-info p i {
-    color: var(--accent-green);
+    color: #23244c;
     margin-right: 0.5rem;
 }
 

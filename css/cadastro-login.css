@@ -244,7 +244,7 @@ input:focus, select:focus {
 
 .card-icon i {
     font-size: 1.75rem;
-    color: var(--primary-color);
+    color: #23244c;
 }
 
 .card-content {
@@ -291,7 +291,7 @@ input:focus, select:focus {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: #23244c;
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -301,7 +301,7 @@ input:focus, select:focus {
 }
 
 .specialized-card:hover .cta-button {
-    background-color: var(--primary-hover);
+    background-color: #38be76;
 }
 
 @media (min-width: 768px) {

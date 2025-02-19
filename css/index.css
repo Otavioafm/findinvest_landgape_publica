@@ -322,7 +322,7 @@
 
 /* CTA Section */
 .cta-section {
-    padding: 6rem 0;
+    padding: 4rem 0; /* Ajustar o padding para mover o texto um pouco mais para cima */
     margin-top: -4rem;
     text-align: center;
     background-color: var(--white);
@@ -356,7 +356,7 @@
 
 /* CTA Section */
 .cta-section {
-    padding: 6rem 0;
+    padding: 5rem 0; /* Reduzir o padding superior e inferior */
     margin-top: -4rem;
     text-align: center;
     background-color: var(--white);
