@@ -2,6 +2,8 @@
 :root {
     --primary-dark: #04101E;
     --primary-purple: #403f6f;
+    --primary-blue: #0066cc;
+    --primary-dark-blue: #0b57a3;
     --light-purple: #f1edff;
     --bright-purple: #8485f0;
     --accent-green: #38A169;
@@ -586,7 +588,7 @@ body {
 }
 
 .nav-link-special {
-    background-color: #0b57a3;
+    background-color: var(--primary-dark-blue); 
     color: var(--white);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
@@ -599,7 +601,7 @@ body {
 }
 
 .nav-link-special:hover {
-    background-color: #0066cc;
+    background-color: var(--primary-blue);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
     transition: var(--transition);
 }
